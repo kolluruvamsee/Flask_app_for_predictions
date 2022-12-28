@@ -1,0 +1,28 @@
+<html >
+<head>
+<title>Test_Deployment</title>
+</head>
+<body>
+<div class="landing_page">
+<h1>Prediction Testing</h1>
+<form action="{{ url_for('predict')}}"method="post">
+<input type="text" name="sepallength" placeholder="Sepal Length" required="required" />
+<br>
+<br>
+<input type="text" name="sepalwidth" placeholder="Sepal Width" required="required" />
+<br>
+<br>
+<input type="text" name="petallength" placeholder="Petal Length" required="required" />
+<br>
+<br>
+<input type="text" name="petalwidth" placeholder="Petal Width" required="required" />
+<br>
+<br>
+<button type="submit">Predict</button>
+</form>
+<br>
+<br>
+  {{ prediction_text }}
+</div>
+</body>
+</html>
